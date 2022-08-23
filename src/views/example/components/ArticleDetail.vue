@@ -131,18 +131,6 @@
         </el-form-item>
 
         <el-form-item
-          prop="content"
-          style="margin-bottom: 30px;"
-        >
-          <tinymce
-            v-if="tinymceActive"
-            ref="editor"
-            v-model="postForm.fullContent"
-            :height="400"
-          />
-        </el-form-item>
-
-        <el-form-item
           prop="imageURL"
           style="margin-bottom: 30px;"
         >
@@ -162,7 +150,6 @@ import { AppModule } from '@/store/modules/app'
 import { TagsViewModule, ITagView } from '@/store/modules/tags-view'
 import MaterialInput from '@/components/MaterialInput/index.vue'
 import Sticky from '@/components/Sticky/index.vue'
-import Tinymce from '@/components/Tinymce/index.vue'
 import UploadImage from '@/components/UploadImage/index.vue'
 import Warning from './Warning.vue'
 import { CommentDropdown, PlatformDropdown, SourceUrlDropdown } from './Dropdown'
@@ -176,7 +163,6 @@ import { Form } from 'element-ui'
     SourceUrlDropdown,
     MaterialInput,
     Sticky,
-    Tinymce,
     UploadImage,
     Warning
   }
@@ -230,7 +216,6 @@ export default class extends Vue {
   }
 
   private tempTagView?: ITagView
-  private tinymceActive = true
 
   get abstractContentLength() {
     return this.postForm.abstractContent.length
@@ -264,11 +249,11 @@ export default class extends Vue {
   }
 
   deactivated() {
-    this.tinymceActive = false
+    //
   }
 
   activated() {
-    this.tinymceActive = true
+    //
   }
 
   private async fetchData(id: number) {

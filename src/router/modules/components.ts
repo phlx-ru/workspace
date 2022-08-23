@@ -12,12 +12,6 @@ const componentsRouter: RouteConfig = {
   },
   children: [
     {
-      path: 'tinymce',
-      component: () => import(/* webpackChunkName: "tinymce" */ '@/views/components-demo/tinymce.vue'),
-      name: 'TinymceDemo',
-      meta: { title: 'tinymce' }
-    },
-    {
       path: 'markdown',
       component: () => import(/* webpackChunkName: "markdown" */ '@/views/components-demo/markdown.vue'),
       name: 'MarkdownDemo',

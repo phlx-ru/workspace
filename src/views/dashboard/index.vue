@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <component :is="currentRole" />
+    <component :is="currentComponent" />
   </div>
 </template>
 
@@ -18,7 +18,7 @@ import EditorDashboard from './editor/index.vue'
   }
 })
 export default class extends Vue {
-  private currentRole = 'admin-dashboard'
+  private currentComponent = 'admin-dashboard'
 
   get roles() {
     return UserModule.roles
@@ -26,7 +26,7 @@ export default class extends Vue {
 
   created() {
     if (!this.roles.includes('admin')) {
-      this.currentRole = 'editor-dashboard'
+      this.currentComponent = 'editor-dashboard'
     }
   }
 }

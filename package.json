@@ -13,7 +13,6 @@
     "mock": "cd mock && ts-node-dev mock-server.ts"
   },
   "dependencies": {
-    "@tinymce/tinymce-vue": "^3.2.6",
     "@toast-ui/editor": "^2.5.1",
     "axios": "^0.21.1",
     "clipboard": "^2.0.8",
@@ -38,7 +37,6 @@
     "screenfull": "^5.1.0",
     "script-loader": "^0.7.2",
     "sortablejs": "^1.13.0",
-    "tinymce": "^5.7.1",
     "vue": "^2.6.12",
     "vue-class-component": "^7.2.6",
     "vue-count-to": "^1.0.13",
@@ -70,7 +68,6 @@
     "@types/node": "^14.14.37",
     "@types/nprogress": "^0.2.0",
     "@types/sortablejs": "^1.10.6",
-    "@types/tinymce": "^4.6.0",
     "@types/vue-splitpane": "^1.0.1",
     "@types/vuedraggable": "^2.23.2",
     "@types/webpack-env": "^1.16.0",

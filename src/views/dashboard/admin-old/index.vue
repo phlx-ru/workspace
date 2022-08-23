@@ -1,5 +1,9 @@
 <template>
   <div class="dashboard-editor-container">
+    <github-corner class="github-corner" />
+
+    <panel-group @handle-set-line-chart-data="handleSetLineChartData" />
+
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
     </el-row>
@@ -76,6 +80,7 @@ import GithubCorner from '@/components/GithubCorner/index.vue'
 import BarChart from './components/BarChart.vue'
 import BoxCard from './components/BoxCard.vue'
 import LineChart, { ILineChartData } from './components/LineChart.vue'
+import PanelGroup from './components/PanelGroup.vue'
 import PieChart from './components/PieChart.vue'
 import RadarChart from './components/RadarChart.vue'
 import TodoList from './components/TodoList/index.vue'
@@ -107,6 +112,7 @@ const lineChartData: { [type: string]: ILineChartData } = {
     BarChart,
     BoxCard,
     LineChart,
+    PanelGroup,
     PieChart,
     RadarChart,
     TodoList,
