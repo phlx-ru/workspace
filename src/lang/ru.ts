@@ -3,6 +3,10 @@ export default {
     dashboard: 'Дашборд',
     documentation: 'Документация',
     guide: 'Гид',
+    marshroutes: 'Маршруты',
+    marshroutesActive: 'Активные маршруты',
+    marshroutesAll: 'Все маршруты',
+    marshroutesDrivers: 'Водители',
     permission: 'Разрешение',
     pagePermission: 'Разрешение для Страницы',
     rolePermission: 'Разрешение для Роли',
@@ -61,7 +65,11 @@ export default {
     clipboard: 'Clipboard',
     i18n: 'I18n',
     externalLink: 'External Link',
-    profile: 'Profile'
+    profile: 'Profile',
+    other: 'Другое',
+    useful: 'Полезные ссылки',
+    stagingGrafana: 'Grafana [staging]',
+    stagingPortainer: 'Portainer [staging]'
   },
   navbar: {
     logOut: 'Log Out',

@@ -90,7 +90,7 @@ export default class extends mixins(ResizeMixin) {
           show: false
         },
         axisTick: {
-          show: false
+          show: true
         },
         splitArea: {
           show: false
@@ -104,7 +104,7 @@ export default class extends mixins(ResizeMixin) {
       yAxis: [{
         type: 'value',
         splitLine: {
-          show: false
+          show: true
         },
         axisLine: {
           lineStyle: {
@@ -112,13 +112,13 @@ export default class extends mixins(ResizeMixin) {
           }
         },
         axisTick: {
-          show: false
+          show: true
         },
         axisLabel: {
           interval: 0
         },
         splitArea: {
-          show: false
+          show: true
         }
       }],
       dataZoom: [{

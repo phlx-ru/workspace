@@ -3,6 +3,10 @@ export default {
     dashboard: 'Dashboard',
     documentation: 'Documentation',
     guide: 'Guide',
+    marshroutes: 'Routes',
+    marshroutesActive: 'Active Routes',
+    marshroutesAll: 'All Routes',
+    marshroutesDrivers: 'Drivers',
     permission: 'Permission',
     pagePermission: 'Page Permission',
     rolePermission: 'Role Permission',
@@ -61,7 +65,11 @@ export default {
     clipboard: 'Clipboard',
     i18n: 'I18n',
     externalLink: 'External Link',
-    profile: 'Profile'
+    profile: 'Profile',
+    other: 'Other',
+    useful: 'Useful links',
+    stagingGrafana: 'Grafana [staging]',
+    stagingPortainer: 'Portainer [staging]'
   },
   navbar: {
     logOut: 'Log Out',

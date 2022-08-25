@@ -72,7 +72,7 @@ undeploy:
 # Build and push image to registry
 push:
 	@set -e; for service in ${SERVICES}; \
-		do echo ${REGISTRY_HOST} && docker build -t ${REGISTRY_HOST}/${SERVICE_NAME}_$${service}:latest \
+		do docker build -t ${REGISTRY_HOST}/${SERVICE_NAME}_$${service}:latest \
 			-f ${CURRENT_DIRECTORY}/Dockerfile-$${service} ${CURRENT_DIRECTORY}/. \
 			&& docker push ${REGISTRY_HOST}/${SERVICE_NAME}_$${service}:latest ; \
 	done
